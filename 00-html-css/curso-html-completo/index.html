@@ -1,0 +1,213 @@
+<!-- Asi se comenta en HTML -->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Codificación -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Portfolio de @horrorcrux</title>
+        <meta
+            name="description"
+            content="Portfolio de Daniel Barri, Ingeniero de Software y Creador de Contenido" />
+        <meta name="robot" content="index, follow" />
+        <meta name="author" content="Daniel Barri" />
+        <meta
+            name="keywords"
+            content="Daniel Barri, horrorcrux, portfolio, ingeniero de software, programador" />
+        <meta name="theme-color" content="#121212" />
+        <meta name="language" content="Spanish" />
+        <meta name="revised" content="Daniel Barri, 20/06/2024" />
+        <meta name="copyright" content="Daniel Barri" />
+        <meta name="distribution" content="global" />
+        <meta name="rating" content="general" />
+        <meta name="classification" content="Portfolio" />
+        <meta name="url" content="https://horrorcrux.com" />
+        <meta name="identifier-URL" content="https://horrorcrux.com" />
+        <meta name="category" content="Portfolio" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="target" content="all" />
+
+        <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+        <!-- Open Graph -->
+        <meta property="og:title" content="Portfolio de @horrorcrux" />
+        <meta
+            property="og:description"
+            content="Portfolio de Daniel Barri, Ingeniero de Software y Creador de Contenido" />
+        <meta property="og:image" content="./profile.jpg" />
+        <meta
+            property="og:image:alt"
+            content="Una fotografía de Daniel Barri mirando a cámara con audífonos" />
+        <meta property="og:url" content="https://horrorcrux.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Portfolio de @horrorcrux" />
+        <meta property="og:locale" content="es_ES" />
+
+        <!-- CSEO -->
+        <link rel="canonical" href="https://horrorcrux.com" />
+        <link rel="alternate" href="https://horrorcrux.com" hreflang="es" />
+        <link rel="alternate" href="https://horrorcrux.com/en" hreflang="en" />
+
+        <!-- Estilos -->
+        <style>
+            body {
+                background: #121212;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Portfolio de @horrorcrux</h1>
+            <nav>
+                <a href="#about">Sobre mí</a>
+                <a href="#experience">Experiencia</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#contact">Contacto</a>
+                <a
+                    href="https://github.com/horrorcrux"
+                    target="_blank"
+                    rel="noreferrer"
+                    >GitHub</a
+                >
+            </nav>
+        </header>
+
+        <main>
+            <p>
+                +1 año de experiencia como
+                <strong>Ingeniero de Software</strong>. Creador y divulgador de
+                programación.
+            </p>
+
+            <h2 id="experience">Experiencia</h2>
+
+            <ul>
+                <li>Sun Energy - 2020 al presente</li>
+                <li>Continental Tire Mexico - 2018-2020</li>
+                <li>General Motors Mexico - 2016-2018</li>
+            </ul>
+            <a download href="./profile.jpg">
+                <img
+                    id="avatar"
+                    width="200"
+                    height="200"
+                    title="Foto de Horrorcrux"
+                    src="./profile.jpg"
+                    alt="Una fotografía de Daniel Barri mirando a cámara con audífonos" />
+            </a>
+
+            <h2 id="projects">Proyectos</h2>
+
+            <aside>
+                <header>
+                    <h3>Mis tecnologías</h3>
+                </header>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ul>
+            </aside>
+
+            <section>
+                <article>
+                    <header><h4>Sitio Web Corporativo</h4></header>
+                    <p>
+                        Desarrollo de un sitio web corporativo para una empresa
+                        de energía solar, utilizando React y Node.js.
+                    </p>
+                    <footer>
+                        <small
+                            >Tecnologías utilizadas: HTML, CSS,
+                            JavaScript</small
+                        >
+                    </footer>
+                </article>
+                <article>
+                    <header><h4>Sitio Web Corporativo</h4></header>
+                    <p>
+                        Desarrollo de un sitio web corporativo para una empresa
+                        de energía solar, utilizando React y Node.js.
+                    </p>
+                    <footer>
+                        <small
+                            >Tecnologías utilizadas: HTML, CSS,
+                            JavaScript</small
+                        >
+                    </footer>
+                </article>
+                <article>
+                    <header><h4>Sitio Web Corporativo</h4></header>
+                    <p>
+                        Desarrollo de un sitio web corporativo para una empresa
+                        de energía solar, utilizando React y Node.js.
+                    </p>
+                    <footer>
+                        <small
+                            >Tecnologías utilizadas: HTML, CSS,
+                            JavaScript</small
+                        >
+                    </footer>
+                </article>
+            </section>
+            <section>
+                <h2>Formulario de contacto</h2>
+                <form method="post" action="/">
+                    <fieldset>
+                        <legend>Contacto</legend>
+                        <!--forma 1 de relacionar label con input -->
+                        <label for="name">Nombre:</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="user_name"
+                            required
+                            placeholder="Tu nombre" />
+                        <br />
+                        <!--forma 2 de relacionar label con input -->
+                        <label>
+                            Correo electrónico:
+                            <input
+                                type="email"
+                                name="user_email"
+                                required
+                                placeholder="Tu correo electrónico" />
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Información adicional</legend>
+                        <label for="message">Mensaje:</label>
+                        <textarea
+                            id="message"
+                            name="user_message"
+                            rows="4"
+                            required
+                            placeholder="Tu mensaje"></textarea>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            &copy; 2024 Daniel Barri - <a href="#contact">Contacto</a>
+            <a href="mailto:daniel.barri@example.com">Enviar un correo</a>
+            <a href="tel:+521234567890">Llamar por teléfono</a>
+            <a
+                href="https://www.linkedin.com/in/horrorcrux"
+                target="_blank"
+                rel="noreferrer"
+                >LinkedIn</a
+            >
+            <a
+                href="whatsapp://send?text=Hola%20Daniel"
+                target="_blank"
+                rel="noreferrer"
+                >WhatsApp</a
+            >
+        </footer>
+    </body>
+</html>
