@@ -51,7 +51,7 @@
         <!-- Estilos -->
         <style>
             body {
-                background: #121212;
+                background: #f0f0f0;
             }
         </style>
     </head>
@@ -71,6 +71,43 @@
                 >
             </nav>
         </header>
+
+        <video
+            autoplay
+            loop
+            muted
+            src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4"></video>
+        <br />
+        <iframe
+            style="width: 100%; aspect-ratio: 16/9; max-width: 960px"
+            src="https://www.youtube.com/embed/Qvx2sVgQ-u0?si=7xESH29-ko888rZP"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        <br />
+        <audio
+            controls
+            src="https://download.samplelib.com/mp3/sample-15s.mp3"></audio>
+
+        <dialog id="dialog">
+            <h1>¿Sabias que puedes abrir una modal asi?</h1>
+            <p>¡Y es totalmente nativo!</p>
+            <button id="hide">Cerrar modal</button>
+        </dialog>
+
+        <button id="show">Abrir modal</button>
+
+        <script>
+            window.show.addEventListener("click", () => {
+                window.dialog.showModal();
+            });
+
+            window.hide.addEventListener("click", () => {
+                window.dialog.close();
+            });
+        </script>
 
         <main>
             <p>
@@ -142,7 +179,12 @@
                     </footer>
                 </article>
                 <article>
-                    <header><h4>Sitio Web Corporativo</h4></header>
+                    <header><h4>Sito de Tesla</h4></header>
+                    <img
+                        style="width: 100%; aspect-ratio: 638/317"
+                        loading="lazy"
+                        src="./Tesla.png"
+                        alt="captura de pantalla de la pagina de Tesla" />
                     <p>
                         Desarrollo de un sitio web corporativo para una empresa
                         de energía solar, utilizando React y Node.js.
@@ -156,6 +198,32 @@
                 </article>
             </section>
             <section>
+                <h2>Preguntas frecuentes</h2>
+                <details open>
+                    <summary>¿Qué estudios tienes</summary>
+                    <p>
+                        Estudie en la universidad Escuela Bancaria y Comercial
+                        en San Luis Potosí la carrera de programación y
+                        transformación digital durante 2 años y medio
+                    </p>
+                </details>
+                <details>
+                    <summary>¿Qué lenguajes de programación dominas?</summary>
+                    <p>
+                        Principalmente JavaScript y Python, pero también tengo
+                        conocimientos en TypeScript, React, Node.js, Django,
+                        HTML5 y CSS3.
+                    </p>
+                </details>
+                <details>
+                    <summary>¿Cuales son tus hobbies?</summary>
+                    <p>
+                        Me gusta mucho el deporte sobre todo el Tennis y las
+                        escalada deportiva
+                    </p>
+                </details>
+            </section>
+            <section>
                 <h2>Formulario de contacto</h2>
                 <form method="post" action="/">
                     <fieldset>
@@ -167,7 +235,8 @@
                             id="name"
                             name="user_name"
                             required
-                            placeholder="Tu nombre" />
+                            placeholder="Tu nombre"
+                            required />
                         <br />
                         <!--forma 2 de relacionar label con input -->
                         <label>
@@ -176,19 +245,68 @@
                                 type="email"
                                 name="user_email"
                                 required
-                                placeholder="Tu correo electrónico" />
+                                placeholder="Tu correo electrónico"
+                                required />
                         </label>
                     </fieldset>
                     <fieldset>
                         <legend>Información adicional</legend>
-                        <label for="message">Mensaje:</label>
+                        <label for="tel">Teléfono:</label>
+                        <input
+                            type="tel"
+                            id="tel"
+                            name="user_tel"
+                            placeholder="Tu teléfono"
+                            required />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Otros</legend>
+                        <div>
+                            <label for="why">¿Por que quieres contactar?</label>
+                            <select name="why" id="why">
+                                <option value="trabajo">Trabajo</option>
+                                <option value="proyecto">Proyecto</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="terms">¿Aceptas los términos?</label>
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                name="terms"
+                                required />
+                        </div>
+                        <div>
+                            <datalist id="languages">
+                                <option value="JavaScript"></option>
+                                <option value="TypeScript"></option>
+                                <option value="React"></option>
+                                <option value="Node.js"></option>
+                                <option value="Python"></option>
+                                <option value="Django"></option>
+                                <option value="HTML5"></option>
+                                <option value="CSS3"></option>
+                            </datalist>
+                            <label for="tech">
+                                ¿Con qué lenguaje quieres que te ayude?
+                                <input list="languages" name="languages" />
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Mensaje</legend>
+                        <label for="msg">Mensaje:</label>
+                        <br />
                         <textarea
-                            id="message"
+                            id="msg"
                             name="user_message"
                             rows="4"
-                            required
-                            placeholder="Tu mensaje"></textarea>
+                            cols="50"
+                            placeholder="Escribe tu mensaje aquí..."
+                            required></textarea>
                     </fieldset>
+                    <input type="submit" value="Enviar contacto" />
                 </form>
             </section>
         </main>
