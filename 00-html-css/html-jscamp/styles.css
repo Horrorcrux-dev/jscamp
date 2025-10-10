@@ -42,34 +42,10 @@ body {
     line-height: 1.6;
 }
 
-body header div {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-body header div img {
+.avatar {
     border-radius: 100%;
     align-items: center;
     height: 40px;
-}
-
-body header div .secondary-button {
-    background: var(--primary-dark);
-    color: var(--primary-light);
-    font-weight: 500;
-    width: fit-content;
-    white-space: nowrap;
-    text-align: center;
-    margin: 0;
-}
-
-body header div .primary-button {
-    background: var(--input-bg);
-    color: var(--text-primary);
-    font-weight: 500;
-    width: 100%;
-    text-align: center;
 }
 
 /* Títulos principales */
@@ -87,7 +63,7 @@ h1 + p {
 }
 
 /* Header */
-header {
+.nav-bar {
     border-bottom: 1px solid var(--border);
     background: var(--background);
     padding: 0.5rem 2rem; /* Espaciado horizontal de barra header*/
@@ -95,11 +71,22 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+    height: 60px;
 
     h2 {
         font-size: 1.25rem;
         font-weight: 700;
         color: var(--text-primary);
+    }
+
+    .logo-nav {
+        flex-direction: row;
+        gap: 2rem;
+
+        .logo {
+            align-items: center;
+            gap: 0.5rem;
+        }
     }
 }
 
@@ -107,12 +94,6 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
 }
 
 /* Navegación del header a otras páginas */
@@ -133,12 +114,6 @@ nav {
             outline: none;
         }
     }
-}
-
-.logo-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
 }
 
 /* Hero */
@@ -262,42 +237,53 @@ form button[type="submit"]:focus {
     align-items: center;
     gap: 1rem;
 }
-/* Botones del Header */
-.primary-button {
-    padding: 0.5rem 1rem;
+/* Botones*/
+.button {
     width: fit-content;
+    padding: 0.4rem 1rem;
     border-radius: 0.5rem;
-    background-color: var(--card-bg);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.button.primary {
+    background: var(--card-bg);
     color: var(--text-primary);
-    display: inline-block;
-    font-size: 0.875rem;
-    font-weight: 700;
-    text-decoration: none;
 }
 
-.secondary-button {
-    padding: 0.5rem 1rem;
-    width: fit-content;
-    border-radius: 0.5rem;
-    background-color: var(--hsla-example);
-    color: white;
-    display: inline-block;
-    font-size: 0.875rem;
-    font-weight: 700;
-    text-decoration: none;
+.button.secondary {
+    background: var(--primary-dark);
+    color: var(--primary-light);
 }
 
-.tertiary-button {
-    padding: 0.5rem 1rem;
-    width: fit-content;
-    border-radius: 0.5rem;
-    background-color: var(--primary-light);
+.button.tertiary {
+    background: var(--primary-light);
     color: var(--text-primary);
     border: 1px solid var(--border);
-    display: inline-block;
-    font-size: 0.875rem;
-    font-weight: 700;
-    text-decoration: none;
+}
+
+.hero-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0;
+    max-width: 800px;
+    margin: 1rem auto;
+}
+
+.hero-footer {
+    max-width: 1200px;
+    border: none;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
 }
 
 .filters-wrapper {
