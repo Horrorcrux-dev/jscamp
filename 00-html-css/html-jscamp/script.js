@@ -1,11 +1,8 @@
-const boton = document.querySelectorAll(".apply-button");
+const boton = document.querySelector("#boton-importante");
 
-/*
-botones.forEach((boton) => {
-    botones.addEventListener("click", function () {
-        boton.textContent = "Aplicado!";
-        boton.classList.add("is-applied");
-        boton.diabled = true;
-    });
+boton.addEventListener("click", () => {
+    boton.textContent = "Aplicado!";
+    boton.style.backgroundColor = "#4caf50";
+    boton.style.cursor = "not-allowed";
+    boton.disabled = true;
 });
-*/
