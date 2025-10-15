@@ -93,71 +93,55 @@
                         placeholder="Buscar empleos por titulo, habilidad o empresa" />
                 </form>
                 <div class="filters-wrapper">
-                    <div class="filter-wrap">
-                        <select name="Tecnología" id="tecnologia">
-                            <option value="" hidden selected>Tecnología</option>
-                            <option value="">Todos</option>
-                            <option value="javascript">JavaScript</option>
-                            <option value="python">Python</option>
-                            <option value="java">Java</option>
-                            <option value="csharp">C#</option>
-                            <option value="ruby">Ruby</option>
-                            <option value="php">PHP</option>
-                            <option value="go">Go</option>
-                            <option value="typescript">TypeScript</option>
-                            <hr />
-                            <option value="sql">SQL</option>
-                            <option value="mongodb">MongoDB</option>
-                            <option value="r.">R.</option>
-                            <hr />
-                            <option value="node.js">Node.js</option>
-                            <option value="react">React</option>
-                            <hr />
-                            <option value="swift">Swift</option>
-                            <option value="kotlin">Kotlin</option>
-                            <option value="ui/ux">UI/UX</option>
-                            <hr />
-                            <option value="aws">AWS</option>
-                            <option value="Azure">Azure</option>
-                            <option value="gcp">GPC</option>
-                        </select>
-                    </div>
+                    <select name="Tecnología" id="tecnologia">
+                        <option value="" selected>Tecnología</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="csharp">C#</option>
+                        <option value="ruby">Ruby</option>
+                        <option value="php">PHP</option>
+                        <option value="go">Go</option>
+                        <option value="typescript">TypeScript</option>
+                        <option value="sql">SQL</option>
+                        <option value="mongodb">MongoDB</option>
+                        <option value="r.">R.</option>
+                        <option value="node.js">Node.js</option>
+                        <option value="react">React</option>
+                        <option value="swift">Swift</option>
+                        <option value="kotlin">Kotlin</option>
+                        <option value="ui/ux">UI/UX</option>
+                        <option value="aws">AWS</option>
+                        <option value="Azure">Azure</option>
+                        <option value="gcp">GPC</option>
+                    </select>
 
-                    <div class="filter-wrap">
-                        <select name="Ubicación" id="ubicacion">
-                            <option value="" hidden selected>Ubicación</option>
-                            <option value="">Todos</option>
-                            <option value="remoto">Remoto</option>
-                            <option value="on-site">On-site</option>
-                            <option value="hibrido">Hibrido</option>
-                        </select>
-                    </div>
-                    <div class="filter-wrap">
-                        <select name="Tipo de contrato" id="contrato">
-                            <option value="" hidden selected>
-                                Tipo de contrato
-                            </option>
-                            <option value="">Todos</option>
-                            <option value="tiempo completo">
-                                Tiempo completo
-                            </option>
-                            <option value="medio tiempo">Medio tiempo</option>
-                            <option value="freelance">Freelance</option>
-                            <option value="pasantia">Pasantia</option>
-                        </select>
-                    </div>
-                    <div class="filter-wrap">
-                        <select name="Nivel de experiencia" id="experiencia">
-                            <option value="" hidden selected>
-                                Nivel de experiencia
-                            </option>
-                            <option value="">Todos</option>
-                            <option value="junior">Junior</option>
-                            <option value="mid-level">Mid-level</option>
-                            <option value="senior">Senior</option>
-                            <option value="lead">Lead</option>
-                        </select>
-                    </div>
+                    <select name="Ubicación" id="ubicacion">
+                        <option value="" hidden selected>Ubicación</option>
+                        <option value="remoto">Remoto</option>
+                        <option value="on-site">On-site</option>
+                        <option value="hibrido">Hibrido</option>
+                    </select>
+
+                    <select name="Tipo de contrato" id="contrato">
+                        <option value="" hidden selected>
+                            Tipo de contrato
+                        </option>
+                        <option value="tiempo completo">Tiempo completo</option>
+                        <option value="medio tiempo">Medio tiempo</option>
+                        <option value="freelance">Freelance</option>
+                        <option value="pasantia">Pasantia</option>
+                    </select>
+
+                    <select name="Nivel de experiencia" id="experiencia">
+                        <option value="" hidden selected>
+                            Nivel de experiencia
+                        </option>
+                        <option value="junior">Junior</option>
+                        <option value="mid-level">Mid-level</option>
+                        <option value="senior">Senior</option>
+                        <option value="lead">Lead</option>
+                    </select>
                 </div>
             </section>
             <section class="jobs-listings">
